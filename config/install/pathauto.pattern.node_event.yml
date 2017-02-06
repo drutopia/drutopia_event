@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_event
+label: 'Node event'
+type: 'canonical_entities:node'
+pattern: " \tevent/[node:title]"
+selection_criteria:
+  22a2e019-a917-4bfe-9384-783130d7488d:
+    id: node_type
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 22a2e019-a917-4bfe-9384-783130d7488d
+selection_logic: and
+weight: -5
+relationships: {  }
