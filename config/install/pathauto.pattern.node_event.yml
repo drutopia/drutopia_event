@@ -6,16 +6,16 @@ dependencies:
 id: node_event
 label: 'Node event'
 type: 'canonical_entities:node'
-pattern: " \tevent/[node:title]"
+pattern: 'event/[node:title]'
 selection_criteria:
-  22a2e019-a917-4bfe-9384-783130d7488d:
+  d6bbef87-e5ab-476e-b8f5-7330660e8b43:
     id: node_type
     bundles:
       event: event
     negate: false
     context_mapping:
       node: node
-    uuid: 22a2e019-a917-4bfe-9384-783130d7488d
+    uuid: d6bbef87-e5ab-476e-b8f5-7330660e8b43
 selection_logic: and
 weight: -5
 relationships: {  }
