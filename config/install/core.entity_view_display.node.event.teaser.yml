@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
     - field.field.node.event.field_summary
-    - image.style.medium
+    - image.style.small_square
     - node.type.event
   module:
     - datetime
@@ -68,7 +68,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: medium
+      image_style: small_square
       image_link: content
     third_party_settings: {  }
   field_summary:
