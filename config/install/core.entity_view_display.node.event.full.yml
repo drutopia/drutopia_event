@@ -36,18 +36,11 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - node_title
         - field_image
         - field_event_date
         - field_body_paragraph
         - field_event_type
         - links
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 0
-        label: hidden
-        formatter: default
 id: node.event.full
 targetEntityType: node
 bundle: event
