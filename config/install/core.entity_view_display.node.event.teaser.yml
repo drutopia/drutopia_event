@@ -63,6 +63,7 @@ content:
       timezone_override: ''
       format_type: long
     third_party_settings: {  }
+    region: ds_content
   field_image:
     type: image
     weight: 0
@@ -71,12 +72,14 @@ content:
       image_style: small_square
       image_link: content
     third_party_settings: {  }
+    region: ds_content
   field_summary:
     type: text_default
     weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    region: ds_content
 hidden:
   body: true
   field_body_paragraph: true

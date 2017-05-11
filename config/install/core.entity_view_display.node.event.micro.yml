@@ -58,6 +58,7 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: ds_content
 hidden:
   body: true
   field_body_paragraph: true

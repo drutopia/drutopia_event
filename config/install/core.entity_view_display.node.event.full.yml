@@ -54,6 +54,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: ds_content
   field_event_date:
     weight: 2
     label: inline
@@ -62,6 +63,7 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: ds_content
   field_event_type:
     weight: 4
     label: hidden
@@ -69,6 +71,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: ds_content
   field_image:
     weight: 1
     label: hidden
@@ -77,10 +80,12 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: ds_content
   links:
     weight: 5
     settings: {  }
     third_party_settings: {  }
+    region: ds_content
 hidden:
   body: true
   field_summary: true
