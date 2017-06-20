@@ -11,7 +11,7 @@ field_name: field_summary
 entity_type: node
 bundle: event
 label: Summary
-description: 'Use this summary field to provide a brief summary of your post that will display in certain displays.'
+description: 'Enter a short description of what this Event is about. The summary is displayed on Event teasers, such as on the Events page. '
 required: false
 translatable: false
 default_value: {  }
