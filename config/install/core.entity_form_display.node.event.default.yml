@@ -36,6 +36,7 @@ content:
       edit_mode: open
       add_mode: button
       form_display_mode: default
+      default_paragraph_type: text
     third_party_settings: {  }
     region: content
   field_event_date:

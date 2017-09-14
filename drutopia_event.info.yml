@@ -16,6 +16,7 @@ dependencies:
   - paragraphs
   - path
   - pathauto
+  - responsive_image
   - taxonomy
   - text
   - user

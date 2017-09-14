@@ -9,25 +9,24 @@ dependencies:
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
     - field.field.node.event.field_summary
-    - image.style.small_square
     - node.type.event
   module:
     - datetime
     - ds
-    - image
+    - responsive_image
     - text
     - user
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
-      path: modules/contrib/ds
-      library: ''
-      disable_css: false
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: true
       entity_classes: all_classes
       settings:
         wrappers:
-          ds_content: div
+          left: div
+          right: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
@@ -35,15 +34,17 @@ third_party_settings:
         classes:
           layout_class: {  }
     regions:
-      ds_content:
+      left:
         - field_image
-        - field_event_date
+      right:
         - node_title
+        - field_event_date
         - field_summary
+        - field_event_type
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 1
         label: hidden
         formatter: default
         settings:
@@ -57,31 +58,38 @@ mode: teaser
 content:
   field_event_date:
     type: datetime_default
-    weight: 1
-    label: hidden
+    weight: 2
+    label: visually_hidden
     settings:
       timezone_override: ''
-      format_type: long
+      format_type: medium
     third_party_settings: {  }
-    region: ds_content
+    region: right
+  field_event_type:
+    type: entity_reference_label
+    weight: 4
+    region: right
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
   field_image:
-    type: image
+    type: responsive_image
     weight: 0
     label: hidden
     settings:
-      image_style: small_square
       image_link: content
+      responsive_image_style: ''
     third_party_settings: {  }
-    region: ds_content
+    region: left
   field_summary:
     type: text_default
     weight: 3
-    label: hidden
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    region: ds_content
+    region: right
 hidden:
   body: true
   field_body_paragraph: true
-  field_event_type: true
   links: true

@@ -9,25 +9,28 @@ dependencies:
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
     - field.field.node.event.field_summary
-    - image.style.large
     - node.type.event
+    - responsive_image.styles.wide
   module:
     - datetime
     - ds
     - entity_reference_revisions
-    - image
+    - responsive_image
     - user
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
-      path: modules/contrib/ds
-      library: ''
-      disable_css: false
+      id: ds_3col_stacked
+      library: ds/ds_3col_stacked
+      disable_css: true
       entity_classes: all_classes
       settings:
         wrappers:
-          ds_content: div
+          header: div
+          left: div
+          middle: div
+          right: div
+          footer: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
@@ -35,9 +38,11 @@ third_party_settings:
         classes:
           layout_class: {  }
     regions:
-      ds_content:
+      header:
         - field_image
+      left:
         - field_event_date
+      middle:
         - field_body_paragraph
         - field_event_type
         - links
@@ -48,44 +53,44 @@ mode: full
 content:
   field_body_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 3
-    label: hidden
+    weight: 2
+    label: visually_hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: ds_content
+    region: middle
   field_event_date:
-    weight: 2
+    weight: 1
     label: inline
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
     type: datetime_default
-    region: ds_content
+    region: left
   field_event_type:
-    weight: 4
-    label: hidden
+    weight: 3
+    label: visually_hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: ds_content
+    region: middle
   field_image:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
-      image_style: large
+      responsive_image_style: wide
       image_link: ''
     third_party_settings: {  }
-    type: image
-    region: ds_content
+    type: responsive_image
+    region: header
   links:
-    weight: 5
+    weight: 4
+    region: middle
     settings: {  }
     third_party_settings: {  }
-    region: ds_content
 hidden:
   body: true
   field_summary: true
