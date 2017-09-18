@@ -71,9 +71,8 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
       row:
         type: 'entity:node'
@@ -315,7 +314,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: event
+      path: events
       menu:
         type: normal
         title: Events
