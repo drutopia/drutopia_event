@@ -34,19 +34,9 @@
             }
         ]
     },
-    "nid": [
-        {
-            "value": 12
-        }
-    ],
     "uuid": [
         {
             "value": "d5e01cfa-25c9-4325-85a2-6e51702db957"
-        }
-    ],
-    "vid": [
-        {
-            "value": 21
         }
     ],
     "langcode": [
