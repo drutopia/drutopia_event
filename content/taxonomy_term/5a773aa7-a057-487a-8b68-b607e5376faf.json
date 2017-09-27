@@ -7,6 +7,11 @@
             "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/event_type"
         }
     },
+    "tid": [
+        {
+            "value": 2
+        }
+    ],
     "uuid": [
         {
             "value": "5a773aa7-a057-487a-8b68-b607e5376faf"
