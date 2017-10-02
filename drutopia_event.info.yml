@@ -7,11 +7,13 @@ dependencies:
   - ctools
   - datetime
   - drutopia_core
+  - drutopia_seo
   - ds
   - entity_reference_revisions
   - field
   - image
   - menu_ui
+  - metatag
   - node
   - paragraphs
   - path
