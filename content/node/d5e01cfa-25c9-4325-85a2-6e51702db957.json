@@ -112,8 +112,7 @@
                     {
                         "value": "805f3789-aca5-4828-af0f-ea0af837002e"
                     }
-                ],
-                "target_revision_id": "148"
+                ]
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/event\/field_event_type": [
