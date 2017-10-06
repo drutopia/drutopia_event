@@ -196,16 +196,9 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "Sample Event | Drutopialand"
-            }
-        }
-    ],
     "field_event_date": [
         {
-            "value": "2018-09-22T20:56:56"
+            "value": "2018-09-22T20:00:00"
         }
     ],
     "field_summary": [
