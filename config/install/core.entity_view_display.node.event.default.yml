@@ -12,14 +12,12 @@ dependencies:
     - node.type.event
   module:
     - ds
-    - metatag
     - user
 third_party_settings:
   ds:
     layout:
       id: ds_1col
-      path: modules/contrib/ds
-      library: ''
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
@@ -36,19 +34,13 @@ id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
-content:
-  field_meta_tags:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_empty_formatter
-    region: content
+content: {  }
 hidden:
   body: true
   field_body_paragraph: true
   field_event_date: true
   field_event_type: true
   field_image: true
+  field_meta_tags: true
   field_summary: true
   links: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
+    - field.field.node.event.field_meta_tags
     - field.field.node.event.field_summary
     - node.type.event
     - responsive_image.styles.wide
@@ -93,4 +94,5 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_meta_tags: true
   field_summary: true

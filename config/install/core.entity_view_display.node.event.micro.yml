@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
+    - field.field.node.event.field_meta_tags
     - field.field.node.event.field_summary
     - node.type.event
   module:
@@ -64,5 +65,6 @@ hidden:
   field_body_paragraph: true
   field_event_type: true
   field_image: true
+  field_meta_tags: true
   field_summary: true
   links: true
