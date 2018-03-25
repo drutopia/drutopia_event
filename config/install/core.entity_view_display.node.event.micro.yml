@@ -53,8 +53,8 @@ content:
   field_event_date:
     type: daterange_default
     weight: 1
-    label: inline
     region: ds_content
+    label: visually_hidden
     settings:
       separator: '-'
       timezone_override: ''
