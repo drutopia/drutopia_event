@@ -15,7 +15,7 @@ dependencies:
     - node.type.event
     - responsive_image.styles.wide
   module:
-    - datetime
+    - datetime_range
     - ds
     - entity_reference_revisions
     - responsive_image
@@ -66,14 +66,15 @@ content:
     third_party_settings: {  }
     region: middle
   field_event_date:
-    weight: 1
     label: inline
+    type: daterange_default
+    weight: 0
+    region: left
     settings:
       timezone_override: ''
       format_type: long
+      separator: '-'
     third_party_settings: {  }
-    type: datetime_default
-    region: left
   field_event_type:
     weight: 4
     label: visually_hidden

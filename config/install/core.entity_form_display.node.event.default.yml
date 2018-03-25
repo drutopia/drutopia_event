@@ -14,7 +14,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.event
   module:
-    - datetime
+    - datetime_range
     - image
     - metatag
     - paragraphs
@@ -47,7 +47,7 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
+    type: daterange_default
     region: content
   field_event_type:
     weight: 2
