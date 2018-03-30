@@ -12,15 +12,14 @@ dependencies:
     - field.field.node.event.field_summary
     - node.type.event
   module:
-    - datetime
+    - datetime_range
     - ds
     - user
 third_party_settings:
   ds:
     layout:
       id: ds_1col
-      path: modules/contrib/ds
-      library: ''
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
@@ -52,14 +51,15 @@ bundle: event
 mode: micro
 content:
   field_event_date:
+    type: daterange_default
     weight: 1
-    label: inline
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
     region: ds_content
+    label: visually_hidden
+    settings:
+      separator: '-'
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
 hidden:
   body: true
   field_body_paragraph: true

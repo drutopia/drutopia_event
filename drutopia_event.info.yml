@@ -6,6 +6,7 @@ dependencies:
   - config_actions
   - ctools
   - datetime
+  - datetime_range
   - drutopia_core
   - drutopia_seo
   - ds
