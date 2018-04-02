@@ -198,7 +198,8 @@
     ],
     "field_event_date": [
         {
-            "value": "2018-10-23T09:30:00"
+            "value": "2018-10-23T09:30:00",
+            "end_value": "2018-10-23T11:00:00"
         }
     ],
     "field_summary": [
