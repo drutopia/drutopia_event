@@ -73,7 +73,7 @@ display:
         options:
           view_modes:
             'entity:node':
-              event: micro
+              event: teaser
       fields:
         rendered_item:
           table: search_api_index_event
@@ -231,6 +231,8 @@ display:
         use_more: false
         use_more_always: false
         use_more_text: false
+        style: false
+        row: false
       filter_groups:
         operator: AND
         groups:
@@ -258,6 +260,18 @@ display:
       use_more: true
       use_more_always: false
       use_more_text: More
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              event: micro
     cache_metadata:
       max-age: -1
       contexts:
