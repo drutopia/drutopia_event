@@ -3,6 +3,8 @@ description: 'Provides Event content type and related configuration. An <em>even
 type: module
 core: 8.x
 dependencies:
+  - block
+  - block_visibility_groups
   - config_actions
   - ctools
   - datetime
@@ -11,6 +13,7 @@ dependencies:
   - drutopia_seo
   - ds
   - entity_reference_revisions
+  - facets
   - field
   - field_group
   - image
@@ -22,6 +25,7 @@ dependencies:
   - pathauto
   - responsive_image
   - search_api
+  - system
   - taxonomy
   - text
   - user
