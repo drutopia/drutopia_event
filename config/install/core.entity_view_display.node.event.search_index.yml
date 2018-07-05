@@ -14,21 +14,21 @@ dependencies:
     - field.field.node.event.field_topics
     - node.type.event
   module:
+    - datetime_range
     - ds
+    - entity_reference_revisions
     - responsive_image
-    - text
     - user
 third_party_settings:
   ds:
     layout:
-      id: ds_2col
-      library: ds/ds_2col
+      id: ds_1col
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
         wrappers:
-          left: div
-          right: div
+          ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
@@ -36,57 +36,72 @@ third_party_settings:
         classes:
           layout_class: {  }
     regions:
-      left:
+      ds_content:
         - field_image
-      right:
-        - node_title
-        - field_summary
+        - field_event_date
+        - field_body_paragraph
+        - field_event_type
         - field_topics
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: hidden
-        formatter: default
-        settings:
-          link: true
-          wrapper: h2
-          class: ''
-          exclude_node_title: '1'
+        - field_tags
 id: node.event.search_index
 targetEntityType: node
 bundle: event
 mode: search_index
 content:
+  field_body_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_event_date:
+    type: daterange_custom
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      separator: '-'
+      date_format: 'Y-m-d\TH:i:s'
+      timezone_override: ''
+    third_party_settings: {  }
+  field_event_type:
+    type: entity_reference_label
+    weight: 3
+    region: ds_content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
   field_image:
     type: responsive_image
     weight: 0
-    region: left
-    label: visually_hidden
+    region: ds_content
+    label: hidden
     settings:
       responsive_image_style: ''
       image_link: ''
     third_party_settings: {  }
-  field_summary:
-    type: text_default
-    weight: 2
-    region: right
-    label: visually_hidden
-    settings: {  }
+  field_tags:
+    type: entity_reference_label
+    weight: 5
+    region: ds_content
+    label: hidden
+    settings:
+      link: true
     third_party_settings: {  }
   field_topics:
     type: entity_reference_label
-    weight: 3
-    region: right
+    weight: 4
+    region: ds_content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
 hidden:
   body: true
-  field_body_paragraph: true
-  field_event_date: true
-  field_event_type: true
   field_meta_tags: true
-  field_tags: true
+  field_summary: true
   links: true
