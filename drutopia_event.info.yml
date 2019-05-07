@@ -16,6 +16,7 @@ dependencies:
   - facets
   - field
   - field_group
+  - focal_point
   - image
   - menu_ui
   - metatag
