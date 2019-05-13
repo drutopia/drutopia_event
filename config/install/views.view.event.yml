@@ -291,7 +291,7 @@ display:
         title: Events
         description: 'See a lsting of our events.'
         expanded: false
-        parent: ''
+        parent: 'menu_link_content:f1eaa438-620d-418b-acd3-ad00dab9c635'
         weight: 0
         context: '0'
         menu_name: main
